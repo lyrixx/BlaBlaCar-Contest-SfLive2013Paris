@@ -35,16 +35,17 @@ class Solver
      */
     private function pgcd($n1,$n2)
     {
-       while($n1>1){
-            $reste = $n1%$n2;
+       while ($n1>1) {
+            $reste = $n1 % $n2;
 
-            if($reste == 0){
-            break; // sorti quand resultat trouvé
+            if ($reste == 0) {
+                break;
             }
 
             $n1=$n2;
             $n2=$reste;
         }
-        return $n2; // retourne le resultat
-}
+
+        return $n2;
+    }
 }
