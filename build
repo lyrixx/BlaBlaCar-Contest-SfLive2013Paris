@@ -6,7 +6,7 @@ echo <<<'EOL'
 
 /**
  * see : https://github.com/lyrixx/nothing/tree/tmp\n";
- * I works on my laptop: PHP 5.4, Linux
+ * It works on my laptop: PHP 5.4, Linux
  *
  * Grégoire Pineau <lyrixx@lyrixx.info>
  */
