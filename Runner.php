@@ -15,7 +15,6 @@ class Runner
         $datas = explode(PHP_EOL, $datas);
         unset($datas[0]);
 
-
         $datas = array_filter($datas, function($v) {
             return 0 !== preg_match('/^\d+;\d+;\d+$/', $v);
         });
