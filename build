@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+echo "<?php\n";
+
+echo str_replace("<?php\n", '', file_get_contents(__DIR__.'/Runner.php'));
+
+echo str_replace("<?php\n", '', file_get_contents(__DIR__.'/Solver.php'));
+
+echo <<<'EOL'
+
+$runner = new Runner();
+$runner->run();
+
+EOL;
