@@ -20,11 +20,31 @@ class Solver
 
     private function getMaxSize($datas)
     {
-        $min = INF;
+        $pgcd = INF;
         foreach ($datas as $data) {
-            $min = min($min, call_user_func_array('min', $data));
+            foreach ($data as $size) {
+                $pgcd = min($pgcd, $this->pgcd($pgcd, $size));
+            }
         }
 
-        return $min;
+        return $pgcd;
     }
+
+    /**
+     * @see http://www.phpsources.org/scripts224-PHP.htm
+     */
+    private function pgcd($n1,$n2)
+    {
+       while($n1>1){
+            $reste = $n1%$n2;
+
+            if($reste == 0){
+            break; // sorti quand resultat trouvé
+            }
+
+            $n1=$n2;
+            $n2=$reste;
+        }
+        return $n2; // retourne le resultat
+}
 }
