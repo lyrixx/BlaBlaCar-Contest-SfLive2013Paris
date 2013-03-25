@@ -1,0 +1,16 @@
+{
+    "name": "lyrixx/blabla",
+    "description": "lyrixx/blabla",
+    "authors": [
+        {
+            "name": "Grégoire Pineau",
+            "email": "lyrixx@lyrixx.info"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "psr-0": { "":"" }
+    }
+}
