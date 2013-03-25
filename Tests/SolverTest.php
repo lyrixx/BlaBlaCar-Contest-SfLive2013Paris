@@ -48,6 +48,35 @@ class SolverTest extends \PHPUnit_Framework_TestCase
                     array(3, 3, 3),
                 )
             ),
+
+            array(
+                array(
+                    'size' => 4,
+                    'nb'   => 112,
+                ),
+                array(
+                    array(16,16,20),
+                    array(8, 8, 8),
+                    array(12,8, 16),
+                )
+            ),
+
+            array(
+                array(
+                    'size' => 3,
+                    'nb'   => 64772,
+                ),
+                array(
+                    array(60,84, 72),
+                    array(12,24, 12),
+                    array(12,6,  66),
+                    array(66,54, 36),
+                    array(90,90, 90),
+                    array(54,36, 30),
+                    array(78,75, 78),
+                    array(18,18, 18),
+                )
+            ),
         );
     }
 
