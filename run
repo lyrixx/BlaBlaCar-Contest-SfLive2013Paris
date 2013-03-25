@@ -3,4 +3,6 @@
 
 require __DIR__ .'/vendor/autoload.php';
 
-new Solver();
+$runner = new Runner();
+
+$runner->run();
