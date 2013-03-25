@@ -12,7 +12,7 @@ class Runner
             $datas .= $buffer;
         }
 
-        $datas = explode("\n", $datas);
+        $datas = explode(PHP_EOL, $datas);
         unset($datas[0]);
 
 
